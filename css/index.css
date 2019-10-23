@@ -134,6 +134,9 @@ html,
 body {
   height: 100%;
 }
+s html {
+  font-size: 62.5%;
+}
 .trueCenter {
   justify-content: center;
   align-items: center;
