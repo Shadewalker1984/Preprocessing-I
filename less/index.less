@@ -71,6 +71,7 @@ html, body {
 @trueColor: #f3f3f3;// less variable light grey;
 
 
+
 header {
 	text-align: center;
 	font-size: 2.5rem;
@@ -118,18 +119,81 @@ header {
 		display: flex;
 		flex-direction: column;
 		.trueCenter();
-		// .trueMargin();	
+		.trueMargin();	
+		width: 50%;
 		h1 {
-			align-items: flex-start;
 			font-size: 2rem;
-			.trueMargin();	
+			padding: 2%;
+			margin-bottom: 10%;	
 			address {
 				.trueCenter();
 				.trueMargin();
 				padding: 2%;
-
+			} //address end
 			} //upperText h1 address end;
 		} //upperText h1 end
-	}//end Section div
-} // section end
+	}//end Section 
+
+.midSection {
+	display: flex;
+	margin: 0, auto;
+	background-color: lightgrey;
+	height: 30%;
+
+	.midText {
+		border: 1px solid red;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.trueMargin();
+	} //end midSection midText
+
+	h1 {
+		border: 1px solid green;
+		width: 100%;
+		text-align: center;
+		height: 2rem;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	} // midSection h1 end
+
+	.midPara {
+		border: 1px solid yellow;
+		width: 50%;
+
+		h2 {
+			font-size: 2rem;
+			text-align: center;
+			.trueMargin();
+		} // end of midSection midPara h2
+	} //end MidPara
+
+
+	.hobbies {
+		width: 50%;
+		text-align: center;
+
+
+		h2 {
+			.trueCenter();
+			margin: 0 auto;
+			font-size: 2rem;
+		}//end hobbies h1
+
+		ul {
+			// border: 1px solid blue;
+			.trueCenter();
+		}//end of hobbies UL
+		li {
+			padding: 2rem;
+			margin: .5rem;
+			border: 1px solid black;
+			height: 2rem;
+			width: 0 auto;
+			font-size: 1.2rem;
+		} //end of hobbies li
+
+
+	} //end hobbies
+} //midSection end
 
