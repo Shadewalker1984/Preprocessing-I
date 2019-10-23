@@ -168,6 +168,11 @@ header h1 {
   align-items: center;
   margin: 2em;
 }
+@media (max-width: 500px) {
+  .upperSection nav {
+    flex-direction: column;
+  }
+}
 .upperSection nav a {
   width: 100%;
   justify-content: center;
@@ -187,6 +192,11 @@ header h1 {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .upperSection img {
+    display: none;
+  }
+}
 .upperSection .upperText {
   display: flex;
   flex-direction: column;
@@ -195,6 +205,12 @@ header h1 {
   margin: 2rem;
   padding: 2rem;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .upperSection .upperText {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .upperSection .upperText h1 {
   font-size: 2rem;
@@ -222,6 +238,12 @@ header h1 {
   padding: 2rem;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .midSection .midText {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .midSection h1 {
   width: 100%;
   text-align: center;
@@ -232,6 +254,12 @@ header h1 {
 .midSection .midPara {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .midSection .midPara {
+    width: 100%;
+    text-align: center;
+  }
+}
 .midSection .midPara h2 {
   font-size: 2rem;
   text-align: center;
@@ -241,6 +269,12 @@ header h1 {
 .midSection .hobbies {
   width: 50%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .midSection .hobbies {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 .midSection .hobbies h2 {
   justify-content: center;
