@@ -59,6 +59,9 @@ html, body {
 
 
 // BELOW IS MY CSS.LESS
+.container {
+}
+
 
 .trueCenter {
 	justify-content: center;
@@ -105,8 +108,12 @@ header {
 			justify-content: center;
 			align-items: center;
 			padding: 2rem;
+			color: black;
 
 		} //Section nav a end
+		a:hover {
+			color: red;
+		}
 	} // nav end
 	img {
 		text-align: center;
@@ -141,15 +148,14 @@ header {
 	height: 30%;
 
 	.midText {
-		border: 1px solid red;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		flex-wrap: wrap;
 		.trueMargin();
+		padding: 2%;
 	} //end midSection midText
 
 	h1 {
-		border: 1px solid green;
 		width: 100%;
 		text-align: center;
 		height: 2rem;
@@ -158,7 +164,6 @@ header {
 	} // midSection h1 end
 
 	.midPara {
-		border: 1px solid yellow;
 		width: 50%;
 
 		h2 {
@@ -196,25 +201,29 @@ header {
 } //midSection end
 
 .bottomSection {
-	border: 1px solid orange;
 	margin: 0 auto;
 	width: 100%;
+	background-color: @trueColor;
 
 	h1 {
 		width: 100%;
 		text-align: center;
 		padding: 1rem;
 		font-size: 2rem;
+		border-bottom: 1px solid black;
 	}
 
 	.workHistory {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: nowrap;
 		width: 100%;
+		background-color: @trueColor;
 
 	.firstWork{
 		width: 100%;
 		display: flex;
+		border-bottom: 1px solid black;
 		p {
 			width: 25%;
 			padding: 2%;
@@ -240,7 +249,48 @@ header {
 			.trueCenter();
 		}//end workHistory firstWork firstWorkList
 	}//end workhistory firstwork
-}
+
+	.secondWork{
+		width: 100%;
+		display: flex;
+		border-bottom: 1px solid black;
+		p {
+			width: 25%;
+			padding: 2%;
+		}
+		ul {
+			text-align: center;
+			align-items: center;
+		}
+		li {
+			padding: .2rem;
+		}
+		.secondWorkName {
+			width: 25%;
+		}//end workhistory secondWork secondWorkName
+		.secondWorkContact {
+			width: 25%;
+		}//end  workhistory secondWork secondWorkContact
+		.secondWorkDisc {
+			width: 25%;
+		}//end  workhistory secondWork secondWorkDisc
+		.secondWorkList {
+			width: 25%;
+			.trueCenter();
+		}//end workHistory secondWork secondWorkList
+	}//end workhistory firstwork
+}//end bottomSection
 
 }//bottomSection end
 
+
+footer {
+	margin: 0 auto;
+	padding: 5%;
+	text-align: center;
+	background-color: @trueColor;
+
+	p {
+		font-size: 1.2rem;
+	}
+}

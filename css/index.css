@@ -173,6 +173,10 @@ header h1 {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  color: black;
+}
+.upperSection nav a:hover {
+  color: red;
 }
 .upperSection img {
   text-align: center;
@@ -211,15 +215,14 @@ header h1 {
   height: 30%;
 }
 .midSection .midText {
-  border: 1px solid red;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 2rem;
   padding: 2rem;
+  padding: 2%;
 }
 .midSection h1 {
-  border: 1px solid green;
   width: 100%;
   text-align: center;
   height: 2rem;
@@ -227,7 +230,6 @@ header h1 {
   margin-bottom: 2rem;
 }
 .midSection .midPara {
-  border: 1px solid yellow;
   width: 50%;
 }
 .midSection .midPara h2 {
@@ -259,24 +261,28 @@ header h1 {
   font-size: 1.2rem;
 }
 .bottomSection {
-  border: 1px solid orange;
   margin: 0 auto;
   width: 100%;
+  background-color: #f3f3f3;
 }
 .bottomSection h1 {
   width: 100%;
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
+  border-bottom: 1px solid black;
 }
 .bottomSection .workHistory {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
+  background-color: #f3f3f3;
 }
 .bottomSection .workHistory .firstWork {
   width: 100%;
   display: flex;
+  border-bottom: 1px solid black;
 }
 .bottomSection .workHistory .firstWork p {
   width: 25%;
@@ -302,4 +308,43 @@ header h1 {
   width: 25%;
   justify-content: center;
   align-items: center;
+}
+.bottomSection .workHistory .secondWork {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.bottomSection .workHistory .secondWork p {
+  width: 25%;
+  padding: 2%;
+}
+.bottomSection .workHistory .secondWork ul {
+  text-align: center;
+  align-items: center;
+}
+.bottomSection .workHistory .secondWork li {
+  padding: 0.2rem;
+}
+.bottomSection .workHistory .secondWork .secondWorkName {
+  width: 25%;
+}
+.bottomSection .workHistory .secondWork .secondWorkContact {
+  width: 25%;
+}
+.bottomSection .workHistory .secondWork .secondWorkDisc {
+  width: 25%;
+}
+.bottomSection .workHistory .secondWork .secondWorkList {
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+footer p {
+  font-size: 1.2rem;
 }
