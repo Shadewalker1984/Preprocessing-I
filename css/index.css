@@ -1,1 +1,387 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+s html {
+  font-size: 62.5%;
+}
+.trueCenter {
+  justify-content: center;
+  align-items: center;
+}
+.trueMargin {
+  margin: 2rem;
+  padding: 2rem;
+}
+header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  padding: 2%;
+}
+header h1 {
+  color: lightgrey;
+}
+.upperSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0, auto;
+  background-color: #f3f3f3;
+}
+.upperSection nav {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin: 2em;
+}
+@media (max-width: 500px) {
+  .upperSection nav {
+    flex-direction: column;
+  }
+}
+.upperSection nav a {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: black;
+}
+.upperSection nav a:hover {
+  color: red;
+}
+.upperSection img {
+  text-align: center;
+  height: 40%;
+  width: 40%;
+  margin: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .upperSection img {
+    display: none;
+  }
+}
+.upperSection .upperText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .upperSection .upperText {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.upperSection .upperText h1 {
+  font-size: 2rem;
+  padding: 2%;
+  margin-bottom: 10%;
+}
+.upperSection .upperText h1 address {
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  padding: 2%;
+}
+.midSection {
+  display: flex;
+  margin: 0, auto;
+  background-color: lightgrey;
+  height: 30%;
+}
+.midSection .midText {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+  padding: 2rem;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .midSection .midText {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.midSection h1 {
+  width: 100%;
+  text-align: center;
+  height: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.midSection .midPara {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .midSection .midPara {
+    width: 100%;
+    text-align: center;
+  }
+}
+.midSection .midPara h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+.midSection .hobbies {
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .midSection .hobbies {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+.midSection .hobbies h2 {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.midSection .hobbies ul {
+  justify-content: center;
+  align-items: center;
+}
+.midSection .hobbies li {
+  padding: 2rem;
+  margin: 0.5rem;
+  border: 1px solid black;
+  height: 2rem;
+  width: 0 auto;
+  font-size: 1.2rem;
+}
+.bottomSection {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.bottomSection h1 {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+}
+.bottomSection .workHistory {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.bottomSection .workHistory .firstWork {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.bottomSection .workHistory .firstWork p {
+  width: 25%;
+  padding: 2%;
+}
+.bottomSection .workHistory .firstWork ul {
+  text-align: center;
+  align-items: center;
+}
+.bottomSection .workHistory .firstWork li {
+  padding: 0.2rem;
+}
+.bottomSection .workHistory .firstWork .firstWorkName {
+  width: 25%;
+}
+.bottomSection .workHistory .firstWork .firstWorkContact {
+  width: 25%;
+}
+.bottomSection .workHistory .firstWork .firstWorkDisc {
+  width: 25%;
+}
+.bottomSection .workHistory .firstWork .firstWorkList {
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+.bottomSection .workHistory .secondWork {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.bottomSection .workHistory .secondWork p {
+  width: 25%;
+  padding: 2%;
+}
+.bottomSection .workHistory .secondWork ul {
+  text-align: center;
+  align-items: center;
+}
+.bottomSection .workHistory .secondWork li {
+  padding: 0.2rem;
+}
+.bottomSection .workHistory .secondWork .secondWorkName {
+  width: 25%;
+}
+.bottomSection .workHistory .secondWork .secondWorkContact {
+  width: 25%;
+}
+.bottomSection .workHistory .secondWork .secondWorkDisc {
+  width: 25%;
+}
+.bottomSection .workHistory .secondWork .secondWorkList {
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+footer p {
+  font-size: 1.2rem;
+}

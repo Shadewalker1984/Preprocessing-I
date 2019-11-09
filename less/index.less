@@ -57,3 +57,269 @@ html, body {
     height: 100%;
 }
 
+
+// BELOW IS MY CSS.LESS
+s
+html {
+	font-size: 62.5%;
+}
+
+.trueCenter {
+	justify-content: center;
+	align-items: center;
+} //Mixin
+.trueMargin {
+	margin: 2rem;
+	padding: 2rem;
+} //MixIn
+@trueColor: #f3f3f3;// less variable light grey;
+
+
+
+header {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 0 auto;
+	padding: 2%;
+
+	h1 {
+		color: lightgrey;
+	} //h1 end
+} //header end
+
+
+.upperSection {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0, auto;
+	background-color: @trueColor;
+	nav {
+		display: flex;
+		justify-content: left;
+		flex-direction: row;
+		width: 100%;
+		text-align: center;
+		align-items: center;
+		margin: 2em;
+
+		@media (max-width:500px) {
+			flex-direction: column;
+		}
+		a {
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem;
+			color: black;
+
+		} //Section nav a end
+		a:hover {
+			color: red;
+		}
+	} // nav end
+	img {
+		text-align: center;
+		height: 40%;
+		width: 40%;
+		.trueMargin();
+		.trueCenter();
+
+		@media (max-width: 500px) {
+			display: none;
+		}
+	} //Section img end
+	.upperText {
+		display: flex;
+		flex-direction: column;
+		.trueCenter();
+		.trueMargin();	
+		width: 50%;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			width: 100%;
+		}
+		h1 {
+			font-size: 2rem;
+			padding: 2%;
+			margin-bottom: 10%;	
+			address {
+				.trueCenter();
+				.trueMargin();
+				padding: 2%;
+			} //address end
+			} //upperText h1 address end;
+		} //upperText h1 end
+	}//end Section 
+
+.midSection {
+	display: flex;
+	margin: 0, auto;
+	background-color: lightgrey;
+	height: 30%;
+	
+
+	.midText {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.trueMargin();
+		padding: 2%;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			width: 100%;
+		}
+	} //end midSection midText
+
+	h1 {
+		width: 100%;
+		text-align: center;
+		height: 2rem;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	} // midSection h1 end
+
+	.midPara {
+		width: 50%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 2rem;
+			text-align: center;
+			.trueMargin();
+		} // end of midSection midPara h2
+	} //end MidPara
+
+
+	.hobbies {
+		width: 50%;
+		text-align: center;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-top: 2rem;
+		}
+
+
+		h2 {
+			.trueCenter();
+			margin: 0 auto;
+			font-size: 2rem;
+		}//end hobbies h1
+
+		ul {
+			// border: 1px solid blue;
+			.trueCenter();
+		}//end of hobbies UL
+		li {
+			padding: 2rem;
+			margin: .5rem;
+			border: 1px solid black;
+			height: 2rem;
+			width: 0 auto;
+			font-size: 1.2rem;
+		} //end of hobbies li
+	} //end hobbies
+} //midSection end
+
+.bottomSection {
+	margin: 0 auto;
+	width: 100%;
+	background-color: @trueColor;
+
+	h1 {
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+		font-size: 2rem;
+		border-bottom: 1px solid black;
+	}
+
+	.workHistory {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 100%;
+		background-color: @trueColor;
+
+	.firstWork{
+		width: 100%;
+		display: flex;
+		border-bottom: 1px solid black;
+		p {
+			width: 25%;
+			padding: 2%;
+		}
+		ul {
+			text-align: center;
+			align-items: center;
+		}
+		li {
+			padding: .2rem;
+		}
+		.firstWorkName {
+			width: 25%;
+		}//end workhistory firstwork firstworkname
+		.firstWorkContact {
+			width: 25%;
+		}//end  workhistory firstwork firstWorkContact
+		.firstWorkDisc {
+			width: 25%;
+		}//end  workhistory firstwork firstWorkDisc
+		.firstWorkList {
+			width: 25%;
+			.trueCenter();
+		}//end workHistory firstWork firstWorkList
+	}//end workhistory firstwork
+
+	.secondWork{
+		width: 100%;
+		display: flex;
+		border-bottom: 1px solid black;
+		p {
+			width: 25%;
+			padding: 2%;
+		}
+		ul {
+			text-align: center;
+			align-items: center;
+		}
+		li {
+			padding: .2rem;
+		}
+		.secondWorkName {
+			width: 25%;
+		}//end workhistory secondWork secondWorkName
+		.secondWorkContact {
+			width: 25%;
+		}//end  workhistory secondWork secondWorkContact
+		.secondWorkDisc {
+			width: 25%;
+		}//end  workhistory secondWork secondWorkDisc
+		.secondWorkList {
+			width: 25%;
+			.trueCenter();
+		}//end workHistory secondWork secondWorkList
+	}//end workhistory firstwork
+}//end bottomSection
+
+}//bottomSection end
+
+
+footer {
+	margin: 0 auto;
+	padding: 5%;
+	text-align: center;
+	background-color: @trueColor;
+
+	p {
+		font-size: 1.2rem;
+	}
+}
